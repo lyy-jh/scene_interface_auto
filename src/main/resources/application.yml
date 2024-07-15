@@ -1,0 +1,37 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+mybatis:
+  mapper-locations: classpath*:/mapper/*.xml
+  type-aliases-package: com.lyy.autointerface.entity
+  #设置执行sql在控制台输出
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    # 设置实体类驼峰法和数据库下划线对应，mybatis-plus不需要配置，可以自动转换
+    mapUnderscoreToCamelCase: true
+  #设置执行sql在控制台输出
+logging:
+  level:
+    mybatis: DEBUG
+    org.apache.ibatis: DEBUG
+
+
+
+#spring.application.name=auto-interface
+#
+#test.url=http://localhost:8080
+#
+##��¼�ӿ�
+#login.uri=/user/login
+#
+##����û��ӿ�
+#addUser.uri=/user/addUser
+#
+##��ѯ�û��б���Ϣ
+#getUserInfo.uri=/user/getUserInfo
+#
+##�����û���Ϣ
+#updateUser.uri=/user/updateUser
