@@ -43,7 +43,7 @@ public class ExtentTestNGIReporterListener implements IReporter {
 
     //生成的路径以及文件名
     private static final String OUTPUT_FOLDER="test-output/";
-    private static final String FILE_NAME="report"+day+" "+hour+minute+second+".html";
+    private static final String FILE_NAME="report"+day+hour+minute+second+".html";
 
     private ExtentReports extent;
 
