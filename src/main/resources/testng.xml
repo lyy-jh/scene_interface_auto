@@ -13,10 +13,6 @@
 
         <classes>
             <class name="com.lyy.autointerface.tests.GetApiTest">
-                <methods>
-                    <include name="test"></include>
-                    <!--                    <include name="test"></include>-->
-                </methods>
             </class>
         </classes>
 

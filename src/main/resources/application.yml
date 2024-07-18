@@ -10,7 +10,7 @@ mybatis:
   #设置执行sql在控制台输出
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-    # 设置实体类驼峰法和数据库下划线对应，mybatis-plus不需要配置，可以自动转换
+    # 设置实体类驼峰法和数据库下划线对应，mybatis-plus不需要配置，可以自动转换,但是mybatis需要设置
     mapUnderscoreToCamelCase: true
   #设置执行sql在控制台输出
 logging:

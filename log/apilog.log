@@ -703,3 +703,103 @@
 2024-07-15 16:32:43 195 DEBUG cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
 2024-07-15 16:32:43 196 DEBUG cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
 2024-07-15 16:32:43 196 DEBUG cache:45 - Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/li/.m2/repository/com/aventstack/extentreports/3.1.1/extentreports-3.1.1.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"
+2024-07-17 15:39:01 312 INFO  TestBase:33 - 正在读取配置文件
+2024-07-17 15:39:01 384 INFO  TestBase:33 - 正在读取配置文件
+2024-07-17 15:39:01 385 INFO  GetApiTest:32 - 测试服务器地址为：https://reqres.in
+2024-07-17 15:39:01 385 INFO  GetApiTest:35 - 当前测试接口的完整地址为：https://reqres.in/api/users?page=2
+2024-07-17 15:39:01 400 INFO  GetApiTest:41 - 开始执行用例...
+2024-07-17 15:39:02 204 INFO  RestClient:33 - 开始发送get请求...
+2024-07-17 15:39:03 371 INFO  RestClient:35 - 发送请求成功，开始得到响应对象...
+2024-07-17 15:39:03 372 INFO  GetApiTest:46 - 判断响应状态码
+2024-07-17 15:39:03 372 INFO  RestClient:135 - 解析，得到响应状态码200
+2024-07-17 15:39:03 377 INFO  RestClient:148 - 得到响应对象的string格式{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+2024-07-17 15:39:03 484 INFO  RestClient:150 - 返回响应内容的JSON格式{"per_page":6,"total":12,"data":[{"last_name":"Lawson","id":7,"avatar":"https://reqres.in/img/faces/7-image.jpg","first_name":"Michael","email":"michael.lawson@reqres.in"},{"last_name":"Ferguson","id":8,"avatar":"https://reqres.in/img/faces/8-image.jpg","first_name":"Lindsay","email":"lindsay.ferguson@reqres.in"},{"last_name":"Funke","id":9,"avatar":"https://reqres.in/img/faces/9-image.jpg","first_name":"Tobias","email":"tobias.funke@reqres.in"},{"last_name":"Fields","id":10,"avatar":"https://reqres.in/img/faces/10-image.jpg","first_name":"Byron","email":"byron.fields@reqres.in"},{"last_name":"Edwards","id":11,"avatar":"https://reqres.in/img/faces/11-image.jpg","first_name":"George","email":"george.edwards@reqres.in"},{"last_name":"Howell","id":12,"avatar":"https://reqres.in/img/faces/12-image.jpg","first_name":"Rachel","email":"rachel.howell@reqres.in"}],"page":2,"total_pages":2,"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https://reqres.in/#support-heading"}}
+2024-07-17 15:39:03 486 INFO  GetApiTest:58 - 执行JSON解析，解析的内容是 Lindsay
+2024-07-17 15:39:03 486 INFO  GetApiTest:59 - 接口内容响应断言
+2024-07-17 15:39:03 486 INFO  GetApiTest:64 - 执行JSON解析，解析的内容是 12
+2024-07-17 15:39:03 486 INFO  GetApiTest:65 - 接口内容响应断言
+2024-07-17 15:39:03 487 INFO  GetApiTest:70 - 执行JSON解析，解析的内容是 {"last_name":"Lawson","id":7,"avatar":"https://reqres.in/img/faces/7-image.jpg","first_name":"Michael","email":"michael.lawson@reqres.in"}
+2024-07-17 15:39:03 488 INFO  GetApiTest:71 - 接口内容响应断言
+2024-07-17 15:43:35 389 INFO  TestBase:33 - 正在读取配置文件
+2024-07-17 15:43:35 437 INFO  TestBase:33 - 正在读取配置文件
+2024-07-17 15:43:35 437 INFO  GetApiTest:32 - 测试服务器地址为：https://reqres.in
+2024-07-17 15:43:35 438 INFO  GetApiTest:35 - 当前测试接口的完整地址为：https://reqres.in/api/users?page=2
+2024-07-17 15:43:35 450 INFO  GetApiTest:41 - 开始执行用例...
+2024-07-17 15:43:36 104 INFO  RestClient:33 - 开始发送get请求...
+2024-07-17 15:43:37 216 INFO  RestClient:35 - 发送请求成功，开始得到响应对象...
+2024-07-17 15:43:37 216 INFO  GetApiTest:46 - 判断响应状态码
+2024-07-17 15:43:37 217 INFO  RestClient:135 - 解析，得到响应状态码200
+2024-07-17 15:43:37 222 INFO  RestClient:148 - 得到响应对象的string格式{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+2024-07-17 15:43:37 330 INFO  RestClient:150 - 返回响应内容的JSON格式{"per_page":6,"total":12,"data":[{"last_name":"Lawson","id":7,"avatar":"https://reqres.in/img/faces/7-image.jpg","first_name":"Michael","email":"michael.lawson@reqres.in"},{"last_name":"Ferguson","id":8,"avatar":"https://reqres.in/img/faces/8-image.jpg","first_name":"Lindsay","email":"lindsay.ferguson@reqres.in"},{"last_name":"Funke","id":9,"avatar":"https://reqres.in/img/faces/9-image.jpg","first_name":"Tobias","email":"tobias.funke@reqres.in"},{"last_name":"Fields","id":10,"avatar":"https://reqres.in/img/faces/10-image.jpg","first_name":"Byron","email":"byron.fields@reqres.in"},{"last_name":"Edwards","id":11,"avatar":"https://reqres.in/img/faces/11-image.jpg","first_name":"George","email":"george.edwards@reqres.in"},{"last_name":"Howell","id":12,"avatar":"https://reqres.in/img/faces/12-image.jpg","first_name":"Rachel","email":"rachel.howell@reqres.in"}],"page":2,"total_pages":2,"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https://reqres.in/#support-heading"}}
+2024-07-17 15:43:37 331 INFO  GetApiTest:58 - 执行JSON解析，解析的内容是 Lindsay
+2024-07-17 15:43:37 332 INFO  GetApiTest:59 - 接口内容响应断言
+2024-07-17 15:43:37 332 INFO  GetApiTest:64 - 执行JSON解析，解析的内容是 12
+2024-07-17 15:43:37 332 INFO  GetApiTest:65 - 接口内容响应断言
+2024-07-17 15:43:37 332 INFO  GetApiTest:70 - 执行JSON解析，解析的内容是 {"last_name":"Lawson","id":7,"avatar":"https://reqres.in/img/faces/7-image.jpg","first_name":"Michael","email":"michael.lawson@reqres.in"}
+2024-07-17 15:43:37 334 INFO  GetApiTest:71 - 接口内容响应断言
+2024-07-17 15:43:37 334 INFO  GetApiTest:73 - 用例执行结束..
+2024-07-17 15:47:31 832 INFO  TestBase:33 - 正在读取配置文件
+2024-07-17 15:47:31 885 INFO  TestBase:33 - 正在读取配置文件
+2024-07-17 15:56:06 158 INFO  TestBase:33 - 正在读取配置文件
+2024-07-17 15:56:06 210 INFO  TestBase:33 - 正在读取配置文件
+2024-07-17 15:56:07 155 INFO  RestClient:83 - 开始发送post请求...
+2024-07-17 15:56:08 575 INFO  RestClient:85 - 发送请求成功，开始得到响应对象...
+2024-07-17 15:56:08 575 INFO  RestClient:135 - 解析，得到响应状态码201
+2024-07-17 15:56:08 578 INFO  RestClient:148 - 得到响应对象的string格式{"job":"tester","name":"jh","id":"938","createdAt":"2024-07-17T07:56:16.128Z"}
+2024-07-17 15:56:08 592 INFO  RestClient:150 - 返回响应内容的JSON格式{"createdAt":"2024-07-17T07:56:16.128Z","name":"jh","id":"938","job":"tester"}
+2024-07-17 15:56:08 597 INFO  RestClient:83 - 开始发送post请求...
+2024-07-17 15:56:09 694 INFO  RestClient:85 - 发送请求成功，开始得到响应对象...
+2024-07-17 15:56:09 695 INFO  RestClient:135 - 解析，得到响应状态码201
+2024-07-17 15:56:09 696 INFO  RestClient:148 - 得到响应对象的string格式{"job":"programmer","name":"lyy","id":"459","createdAt":"2024-07-17T07:56:17.261Z"}
+2024-07-17 15:56:09 696 INFO  RestClient:150 - 返回响应内容的JSON格式{"createdAt":"2024-07-17T07:56:17.261Z","name":"lyy","id":"459","job":"programmer"}
+2024-07-17 17:44:06 240 INFO  TestBase:33 - 正在读取配置文件
+2024-07-17 17:44:06 293 INFO  TestBase:33 - 正在读取配置文件
+2024-07-17 17:45:21 174 INFO  TestBase:33 - 正在读取配置文件
+2024-07-17 17:45:21 224 INFO  TestBase:33 - 正在读取配置文件
+2024-07-18 10:53:17 861 INFO  TestBase:33 - 正在读取配置文件
+2024-07-18 10:53:17 918 INFO  TestBase:33 - 正在读取配置文件
+2024-07-18 11:00:13 216 INFO  TestBase:33 - 正在读取配置文件
+2024-07-18 11:00:13 266 INFO  TestBase:33 - 正在读取配置文件
+2024-07-18 11:02:13 502 INFO  TestBase:33 - 正在读取配置文件
+2024-07-18 11:02:13 553 INFO  TestBase:33 - 正在读取配置文件
+2024-07-18 11:02:14 299 INFO  RestClient:83 - 开始发送post请求...
+2024-07-18 11:02:15 737 INFO  RestClient:85 - 发送请求成功，开始得到响应对象...
+2024-07-18 11:02:15 738 INFO  RestClient:135 - 解析，得到响应状态码201
+2024-07-18 11:02:15 746 INFO  RestClient:148 - 得到响应对象的string格式{"job":"tester","name":"jh","id":"236","createdAt":"2024-07-18T03:02:24.931Z"}
+2024-07-18 11:02:15 757 INFO  RestClient:150 - 返回响应内容的JSON格式{"createdAt":"2024-07-18T03:02:24.931Z","name":"jh","id":"236","job":"tester"}
+2024-07-18 11:02:15 763 INFO  RestClient:83 - 开始发送post请求...
+2024-07-18 11:02:16 879 INFO  RestClient:85 - 发送请求成功，开始得到响应对象...
+2024-07-18 11:02:16 880 INFO  RestClient:135 - 解析，得到响应状态码201
+2024-07-18 11:02:16 880 INFO  RestClient:148 - 得到响应对象的string格式{"job":"programmer","name":"lyy","id":"224","createdAt":"2024-07-18T03:02:26.097Z"}
+2024-07-18 11:02:16 880 INFO  RestClient:150 - 返回响应内容的JSON格式{"createdAt":"2024-07-18T03:02:26.097Z","name":"lyy","id":"224","job":"programmer"}
+2024-07-18 11:07:57 207 INFO  TestBase:33 - 正在读取配置文件
+2024-07-18 11:07:57 250 INFO  TestBase:33 - 正在读取配置文件
+2024-07-18 11:07:58 046 INFO  RestClient:83 - 开始发送post请求...
+2024-07-18 11:07:59 325 INFO  RestClient:85 - 发送请求成功，开始得到响应对象...
+2024-07-18 11:07:59 325 INFO  RestClient:135 - 解析，得到响应状态码201
+2024-07-18 11:07:59 328 INFO  RestClient:148 - 得到响应对象的string格式{"job":"tester","name":"jh","id":"411","createdAt":"2024-07-18T03:08:08.539Z"}
+2024-07-18 11:07:59 339 INFO  RestClient:150 - 返回响应内容的JSON格式{"createdAt":"2024-07-18T03:08:08.539Z","name":"jh","id":"411","job":"tester"}
+2024-07-18 11:10:06 850 INFO  TestBase:33 - 正在读取配置文件
+2024-07-18 11:10:06 899 INFO  TestBase:33 - 正在读取配置文件
+2024-07-18 11:10:07 755 INFO  RestClient:83 - 开始发送post请求...
+2024-07-18 11:10:09 155 INFO  RestClient:85 - 发送请求成功，开始得到响应对象...
+2024-07-18 11:10:09 156 INFO  RestClient:135 - 解析，得到响应状态码201
+2024-07-18 11:10:09 160 INFO  RestClient:148 - 得到响应对象的string格式{"job":"tester","name":"jh","id":"661","createdAt":"2024-07-18T03:10:18.346Z"}
+2024-07-18 11:10:09 174 INFO  RestClient:150 - 返回响应内容的JSON格式{"createdAt":"2024-07-18T03:10:18.346Z","name":"jh","id":"661","job":"tester"}
+2024-07-18 11:10:09 180 INFO  RestClient:83 - 开始发送post请求...
+2024-07-18 11:10:10 370 INFO  RestClient:85 - 发送请求成功，开始得到响应对象...
+2024-07-18 11:10:10 371 INFO  RestClient:135 - 解析，得到响应状态码201
+2024-07-18 11:10:10 371 INFO  RestClient:148 - 得到响应对象的string格式{"job":"programmer","name":"lyy","id":"524","createdAt":"2024-07-18T03:10:19.580Z"}
+2024-07-18 11:10:10 372 INFO  RestClient:150 - 返回响应内容的JSON格式{"createdAt":"2024-07-18T03:10:19.580Z","name":"lyy","id":"524","job":"programmer"}
+2024-07-18 11:11:40 346 INFO  TestBase:33 - 正在读取配置文件
+2024-07-18 11:11:40 387 INFO  TestBase:33 - 正在读取配置文件
+2024-07-18 11:11:41 240 INFO  RestClient:83 - 开始发送post请求...
+2024-07-18 11:11:42 641 INFO  RestClient:85 - 发送请求成功，开始得到响应对象...
+2024-07-18 11:11:42 642 INFO  RestClient:135 - 解析，得到响应状态码201
+2024-07-18 11:11:42 646 INFO  RestClient:148 - 得到响应对象的string格式{"job":"tester","name":"jh","id":"630","createdAt":"2024-07-18T03:11:51.828Z"}
+2024-07-18 11:11:42 660 INFO  RestClient:150 - 返回响应内容的JSON格式{"createdAt":"2024-07-18T03:11:51.828Z","name":"jh","id":"630","job":"tester"}
+2024-07-18 11:11:42 665 INFO  RestClient:83 - 开始发送post请求...
+2024-07-18 11:11:43 766 INFO  RestClient:85 - 发送请求成功，开始得到响应对象...
+2024-07-18 11:11:43 766 INFO  RestClient:135 - 解析，得到响应状态码201
+2024-07-18 11:11:43 767 INFO  RestClient:148 - 得到响应对象的string格式{"job":"programmer","name":"lyy","id":"359","createdAt":"2024-07-18T03:11:52.973Z"}
+2024-07-18 11:11:43 767 INFO  RestClient:150 - 返回响应内容的JSON格式{"createdAt":"2024-07-18T03:11:52.973Z","name":"lyy","id":"359","job":"programmer"}

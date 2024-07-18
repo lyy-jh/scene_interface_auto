@@ -37,7 +37,7 @@ public class GetApiTest extends TestBase{
     }
 
     @Test
-    public void getApiTest() throws ClientProtocolException, IOException {
+    public void getApiTest() throws  IOException {
         logger.info("开始执行用例...");
         restClient = new RestClient();
         httpResponse = restClient.get(url);
@@ -54,22 +54,22 @@ public class GetApiTest extends TestBase{
         JSONObject responseJson = restClient.getResponseJson(httpResponse);
 
         //json内容解析
-//		String s =JsonUtil.getValueByJpath(responseJson, "data[1]/first_name");
-//		logger.info("执行JSON解析，解析的内容是 " + s);
-//		logger.info("接口内容响应断言");
-//		Assert.assertEquals(s, "Lindsay", "first name is not Lindsay");
-//
-//
-//		String total = JsonUtil.getValueByJpath(responseJson, "total");
-//		logger.info("执行JSON解析，解析的内容是 " + total);
-//		logger.info("接口内容响应断言");
-//		Assert.assertEquals(total, "12", "total is not 12");
-//
-//
-//		String data = JsonUtil.getValueByJpath(responseJson, "data[0]");
-//		logger.info("执行JSON解析，解析的内容是 " + data);
-//		logger.info("接口内容响应断言");
-//		Assert.assertEquals(data, "{\"last_name\":\"Lawson\",\"id\":7,\"avatar\":\"https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg\",\"first_name\":\"Michael\",\"email\":\"michael.lawson@reqres.in\"}", "data is not data[0]对象");
+		String s =JsonUtil.getValueByJpath(responseJson, "data[1]/first_name");
+		logger.info("执行JSON解析，解析的内容是 " + s);
+		logger.info("接口内容响应断言");
+		Assert.assertEquals(s, "Lindsay", "first name is not Lindsay");
+
+
+		String total = JsonUtil.getValueByJpath(responseJson, "total");
+		logger.info("执行JSON解析，解析的内容是 " + total);
+		logger.info("接口内容响应断言");
+		Assert.assertEquals(total, "12", "total is not 12");
+
+
+		String data = JsonUtil.getValueByJpath(responseJson, "data[0]");
+		logger.info("执行JSON解析，解析的内容是 " + data);
+		logger.info("接口内容响应断言");
+		Assert.assertEquals(data, "{\"last_name\":\"Lawson\",\"id\":7,\"avatar\":\"https://reqres.in/img/faces/7-image.jpg\",\"first_name\":\"Michael\",\"email\":\"michael.lawson@reqres.in\"}", "data is not data[0]对象");
         logger.info("用例执行结束..");
     }
 }

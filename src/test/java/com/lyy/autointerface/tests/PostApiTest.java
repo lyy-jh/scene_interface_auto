@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.lyy.autointerface.utils.YamlUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.util.EntityUtils;
@@ -20,6 +22,7 @@ import com.lyy.autointerface.restclient.RestClient;
 import com.lyy.autointerface.utils.JsonUtil;
 import com.lyy.autointerface.utils.TestUtil;
 
+@Slf4j
 public class PostApiTest extends TestBase{
     TestBase testBase;
     String host;
@@ -29,7 +32,7 @@ public class PostApiTest extends TestBase{
     Map<String,String> headermap;
     String entityString;
     //excel路径
-    String testCaseExcel;
+//    String testCaseExcel;
 
     @BeforeClass
     public void setUp() {
@@ -37,21 +40,33 @@ public class PostApiTest extends TestBase{
         host = prop.getProperty("server.http.host");
         //url = host+"/api/users";
         //载入配置文件，post接口参数
-        testCaseExcel = prop.getProperty("postdata");
+//        testCaseExcel = prop.getProperty("postdata");
 
 
     }
 
+//    @DataProvider(name="postData")
+//    public Object[][] post() throws IOException{
+//        return TestUtil.dtt("testCaseExcel", 0);
+//
+//    }
+
     @DataProvider(name="postData")
     public Object[][] post() throws IOException{
-        return TestUtil.dtt("testCaseExcel", 0);
-
+       Object[][] objs = YamlUtil.getYamlValue(System.getProperty("user.dir")+"/src/test/java/com/lyy/autointerface/data/userData.yml");
+        for(Object[] obj: objs){
+            log.info("一维数组"+obj.toString());
+            for(Object b: obj){
+                log.info(b.toString());
+            }
+        }
+       return objs;
     }
 
 
     @Test(dataProvider="postData")
     public void postApiTest(String url,String name, String job) throws ClientProtocolException, IOException {
-
+        log.info("url:"+url+"name:"+name+"job:"+job);
         restClient = new RestClient();
 
         //准备请求头信息
@@ -74,10 +89,10 @@ public class PostApiTest extends TestBase{
 
         //解析json
         String username = JsonUtil.getValueByJpath(responseJson, "name");
-        Assert.assertEquals(username, "lyy", "name is not lyy");
+        Assert.assertEquals(username, name, "name is not correct");
 
         String userjob = JsonUtil.getValueByJpath(responseJson, "job");
-        Assert.assertEquals(userjob, "tester", "job is not tester");
+        Assert.assertEquals(userjob, job, "job is not correct");
 
 
     }

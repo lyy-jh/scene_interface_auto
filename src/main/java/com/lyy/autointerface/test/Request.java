@@ -1,46 +1,25 @@
 package com.lyy.autointerface.test;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.lyy.autointerface.base.TestBase;
-import com.lyy.autointerface.parameters.User;
-import com.lyy.autointerface.report.ExtentTestNGIReporterListener;
-import com.lyy.autointerface.report.TestReport;
 import com.lyy.autointerface.restclient.RestClient;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.CloseableHttpResponse;
-import org.apache.log4j.Logger;
-import org.testng.*;
 import org.testng.annotations.*;
 
 import java.io.IOException;
 
-import java.io.IOException;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.methods.CloseableHttpResponse;
-import org.apache.log4j.Logger;
 import org.testng.Assert;
-import org.testng.Reporter;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.alibaba.fastjson.JSONObject;
-import com.lyy.autointerface.base.TestBase;
-import com.lyy.autointerface.restclient.RestClient;
 import com.lyy.autointerface.utils.JsonUtil;
-import org.testng.xml.XmlClass;
-import org.testng.xml.XmlSuite;
-import org.testng.xml.XmlTest;
 
 @Slf4j
-@Listeners({TestReport.class})
 public class Request extends TestBase {
     static TestBase testBase;
     static String host;
